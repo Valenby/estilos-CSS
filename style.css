@@ -1,0 +1,120 @@
+
+/* ---------------------NAVBAR----------------------------------- */
+
+/* utilizando propiedades basicas */
+.menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+.menu-item {
+ margin-top: 1px;
+ width: 300px ;
+ height:70px;
+ background-color: black;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 25px;
+    padding: 30px;
+    text-align: center;
+}
+
+ /* utilizando wrap */
+/* .menu{
+display: flex;
+flex-wrap: wrap;
+background-color: rgb(223, 226, 43);
+}
+
+.menu-item {
+flex-basis: calc(33.33% -20px);
+margin: 10px;
+color: black;
+
+} */
+
+
+.section-uwu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+h1 {
+    display: flex;
+    color: rgb(221, 10, 10);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px;
+    align-items:center ;
+}
+
+p{
+    margin: auto;
+    font-size: 20px;
+    padding: 1px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+     /* transform: rotate(45deg);  */
+}
+
+
+/* utilizamos propiedad transition */
+.transitios{
+    display: flex;
+    flex-direction: row;
+    
+}
+ul{  
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-color:rgb(84, 233, 220);
+    transition: background-color 0.5s ease;
+}
+ul:hover{
+    background-color: rgb(39, 80, 194);
+}
+
+/* que se desvanezca la imagen */
+img{
+    padding: 20px;
+    width: 300px;
+    height: 300px;
+    opacity: 1;
+    
+    /* position: absolute;
+    top:90px;
+    left: 30px; */
+    transition: opacity 0.5s ease;
+    /* filter: blur(3px); */
+}
+img:hover{
+    opacity: 0.5;
+}
+
+input{
+    width: 50%;
+    height: 20px;
+    border-radius: 3px;
+   
+}
+/* boton mas grande */
+button{
+    transform: scale(1);
+    transition: transform 0.3s ease;
+    width: 50px;
+    height: 30px;
+    cursor: pointer;
+    
+}
+button:active{
+    transform: scale(1.2);
+}
